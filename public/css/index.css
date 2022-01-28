@@ -1,24 +1,165 @@
 #wrapper{
-    width:100%;
+    width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
 }
 
-#wrapper #left{
-    width : 35%;
+#wrapper #aside{
+    width: 25%;
     height: 100%;
-    border-right : 1px solid lightgray;
-    display:flex;
+    border-right: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    color: white;
 }
 
-#wrapper #right{
-    width: 65%;
-    height : 100%;
-    display:flex;
+#wrapper #content {
+    height: 100%;
+    flex: 1;
+    display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid #f00;
+    overflow: scroll;
+}
+
+
+#wrapper #content .content{
+    width: 98%;
+    height: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+
+#aside .logo{
+    width : 84%;
+    height : 15.75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+
+
+}
+
+#aside .title{
+    width : 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+
+}
+
+#aside .menus{
+    width:100%;
+    flex : 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#aside .menus .menu-item{
+    width : 80%;
+    height: 10%;
+    font-size : 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom : 1px solid #f0f0f0;
+
+
+}
+#aside .menus .menu-item a{
+    color : white;
+}
+
+#wrapper #content .content-list{
+    width: 96%;
+    height: 94%;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    
+    
+
+}
+
+.content-list .content-item{
+    width : 32%;
+    height : 400px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color : white;
+    margin : 0.65%;
+
+
+}
+
+.content-item .item-thumbnail{
+    width : 100%;
+    height : 40%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #dadada;
+
+}
+
+.item-thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.content-item .item-text-wrapper{
+    width : 90%;
+    height : 60%;
+    padding : 0 5%;
+
+
+}
+
+.item-text-wrapper .title{
+    width : 100%;
+    height : 20%;
+    font-size: 1.5rem;
+    display : flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+
+}
+
+.item-text-wrapper .item-date{
+    width : 100%;
+    height : 10%;
+    color : rgb(143, 143, 143);
+    border-bottom: 1px solid #dadada;
+
+
+}
+
+.item-text-wrapper .item-desc{
+    height: 65;
+    padding : 2.5%;
+    word-break : break-all;
+    overflow: hidden;
+
 }
